@@ -17,12 +17,16 @@ FactoryGirl.define do
     email 'mike@sample.com'
     password 'password'
   end
+  
   factory :song do
     id 1
     name Faker::Name.name
     artist
     album
-
-
   end
+
+  # factory :genre do
+  #   id 1 
+  #   name 'Rock'
+  # end
 end

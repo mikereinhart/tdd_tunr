@@ -1,5 +1,12 @@
 require 'spec_helper'
 
 describe Genre do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  subject(:genre) { create :genre }
+
+  describe 'associations' do
+    it 'has songs' do
+      expect(subject).to respond_to :song
+    end
+  end
 end
