@@ -14,14 +14,15 @@ FactoryGirl.define do
   factory :user do
     id 1
     name Faker::Name.name
+    email 'mike@sample.com'
     password 'password'
   end
-
   factory :song do
     id 1
     name Faker::Name.name
     artist
     album
+
 
   end
 end

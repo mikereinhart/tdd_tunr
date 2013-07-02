@@ -14,14 +14,15 @@ describe Song do
 
   describe 'association' do
     it 'has an artist' do 
-      p subject.name
-      p subject.artist.name
-      p subject.album.name
       expect(subject).to respond_to :artist
     end
 
     it 'has an album' do 
       expect(subject).to respond_to(:album)
+    end
+
+    it 'has a genre' do
+      expect(subject).to respond_to(:genre)
     end
   end
 
